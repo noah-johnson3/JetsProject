@@ -1,1 +1,5 @@
-PassengerJet,Cessna 172,20,100,12000
+PassengerJet,Cessna 172,10,100,12000
+FighterJet,Pessna 182,20,110,13000
+BobaJett,Bessna 192,30,120,14000
+CargoPlane,Airbus A330 MRTT,40,130,15000
+SockJet,Nessna 212,50,140,16000
