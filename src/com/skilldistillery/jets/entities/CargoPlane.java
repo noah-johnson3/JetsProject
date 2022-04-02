@@ -13,7 +13,7 @@ public class CargoPlane extends Jet implements CargoCarrier {
 		this.setSpeed(speed);
 	}
 	public void loadCargo() {
-		
+		System.out.println("Cargo loaded! Prepare for take off!");
 	}
 
 	@Override

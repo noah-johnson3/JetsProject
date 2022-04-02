@@ -25,12 +25,12 @@ public class FighterJet extends Jet implements CombatReady {
 	}
 	@Override
 	public void fly() {
-		System.out.println("pewpewpewpewpew");
+		System.out.println("THIS IS MY FLYING, MY FLYING IS AMAZING, LOOK AT ME FLY");
 	}
 
 	@Override
 	public void fight() {
-		// TODO Auto-generated method stub
+		System.out.println("pewpewpewpewpew");
 		
 	}
 		
