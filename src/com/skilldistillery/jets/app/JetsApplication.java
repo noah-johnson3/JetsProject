@@ -40,7 +40,7 @@ public class JetsApplication {
 
 	}
 
-	private void displayUserMenu() {
+	public void displayUserMenu() {
 
 		boolean keepGoing = true;
 
@@ -55,7 +55,6 @@ public class JetsApplication {
 			System.out.println("7. Add a jet to fleet");
 			System.out.println("8. Remove a jet from Fleet");
 			System.out.println("9. Quit");
-//			System.out.println(field.getJetList());
 			int numChosen = userInput.nextInt();
 
 			userInput.nextLine();
@@ -74,30 +73,37 @@ public class JetsApplication {
 				field.longestRangeJet();
 				break;
 			case 5:
+				
 				for (Jet jet : jetNames) {
 					
 					if(jet instanceof CargoPlane) {
 						((CargoPlane) jet).loadCargo();
 					}
 				}
+				
 				break;
+				
 			case 6:
+				
 				for (Jet jet : jetNames) {
 					
 					if(jet instanceof FighterJet) {
 						((FighterJet) jet).fight();
 					}
 				}
+				
 				break;
+				
 			case 7:
-				field.displayList();
+				field.customJet();
 				break;
-//			case 8:
-//				field.displayList();
-//				break;
-//			case 9:
-//				field.displayList();
-//				break;
+			case 8:
+				field.removeJet(userInput);
+				break;
+			case 9:
+				System.out.println("Goodbye! Thank you for checking my Project, stay tuned for future Projects!");
+				keepGoing = false;
+				break;
 
 			default:
 				break;
