@@ -1,14 +1,9 @@
 package com.skilldistillery.jets.app;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 import com.skilldistillery.jets.entities.AirField;
-import com.skilldistillery.jets.entities.BobaJett;
 import com.skilldistillery.jets.entities.CargoPlane;
 import com.skilldistillery.jets.entities.FighterJet;
 import com.skilldistillery.jets.entities.Jet;
