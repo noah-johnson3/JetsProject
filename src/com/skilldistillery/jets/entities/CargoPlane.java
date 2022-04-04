@@ -18,10 +18,14 @@ public class CargoPlane extends Jet implements CargoCarrier {
 
 	@Override
 	public void fly() {
-		// TODO Auto-generated method stub
-		
+		System.out.println( this.toString() + this.getModel() + " can fly for " + (this.getRange() / this.getSpeed()) + " hours\n");		
 	}
 
+	@Override
+	public String toString() {
+		return "CargoPlane [ Model = " + getModel() + ", Speed = " + getSpeed() + ", Range = " + getRange()
+				+ ", Price = " + getPrice() + "]\n";
+	}
 	@Override
 	public double getSpeedInMach() {
 		// TODO Auto-generated method stub

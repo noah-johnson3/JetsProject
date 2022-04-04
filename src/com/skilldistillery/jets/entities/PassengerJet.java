@@ -4,8 +4,14 @@ public class PassengerJet extends Jet{
 
 	@Override
 	public void fly() {
-		// TODO Auto-generated method stub
+		System.out.println(this.toString() + this.getModel() + " can fly for " + (this.getRange() / this.getSpeed()) + " hours\n");
 		
+	}
+
+	@Override
+	public String toString() {
+		return "PassengerJet [ Model = " + getModel() + ", Speed = " + getSpeed() + ", Range = " + getRange()
+				+ ", Price = " + getPrice() + "]\n";
 	}
 
 	@Override

@@ -10,7 +10,12 @@ public class BobaJett extends FighterJet{
 	}
 	@Override
 	public void fly() {
-		System.out.println("vroom vroom vroom glah glah glah vroom!!!");
+		System.out.println(super.toString() + this.getModel() + " can fly for " + (this.getRange() / this.getSpeed()) + " hours\n");
+	}
+	@Override
+	public String toString() {
+		return "BobaJett [Model = " + getModel() + ",Speed = " + getSpeed()
+				+ ", Range=" + getRange() + ", Price =" + getPrice() + "]\n";
 	}
 	@Override
 	public void fight() {

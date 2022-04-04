@@ -25,12 +25,21 @@ public class FighterJet extends Jet implements CombatReady {
 	}
 	@Override
 	public void fly() {
-		System.out.println("THIS IS MY FLYING, MY FLYING IS AMAZING, LOOK AT ME FLY");
+		System.out.println(this.toString() + this.getModel() + " can fly for " + (this.getRange() / this.getSpeed()) + " hours\n");
+	}
+
+	@Override
+	public String toString() {
+		return "FighterJet [ Model = " + getModel() + ", Speed = " + getSpeed() + ", Range = " + getRange()
+				+ ",  Price = " + getPrice() + "]\n";
 	}
 
 	@Override
 	public void fight() {
-		System.out.println("pewpewpewpewpew");
+		System.out.println("Fighter Jet prepare for attack!");
+		System.out.println("*loads missles*");
+		System.out.println("*locking on to target*");
+		System.out.println("*pew pew pew pew pew pew pew*");
 		
 	}
 		
